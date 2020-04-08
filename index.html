@@ -8,20 +8,21 @@
   <link href="https://fonts.googleapis.com/css?family=Fjalla+One|Source+Sans+Pro&display=swap" rel="stylesheet">
   <!--<link rel="stylesheet" href="styles/estilos.css" media="screen and (max-width:768px)">-->
   <link rel="stylesheet" href="styles/main.css">
- <!--<style>
+  <!--<style>
       @media screen and (max-width:768px){
         body{
           border: 10px solid blue;
         }
       }
-    </style>--> 
+    </style>-->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 
 <body>
+  <i class="icon-menu"></i>
   </div>
   <header class="header">
-    <div class="container">    
+    <div class="container">
       <figure class="logo">
         <img src="images/pierologo.png" height="50" alt="" />
       </figure>
@@ -40,16 +41,16 @@
       </nav>
     </div>
   </header>
- <section class="hero">
-    <div class="container">    
+  <section class="hero">
+    <div class="container">
       <h1>
         Hola! Soy <strong>Piero Montalvo </strong><br> Desarrollador <strong>Javascript</strong> con <br> pasiòn en la
         <strong>enseñanza</strong>
       </h1>
-      <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio"/>
+      <img class="hero-image" src="images/hero.jpg" width="500" height="300" alt="imagen principal del sitio" />
     </div>
   </section>
-  <section id="Portafolio" class="portfolio"> 
+  <section id="Portafolio" class="portfolio">
     <div class="container">
       <h2>Portafolio (Proyectos Destacados)</h2>
       <article class="project">
@@ -78,7 +79,8 @@
           <p class="project-url"><small><strong>Puedes verlo en:</strong>www.platzi.com/native</small></p>
           <p class="project-description">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium omnis,
             nulla adipisci voluptas saepe,
-            quidem ab natus placeat ratione, rem fugit. Est ullam modi odio omnis dolorem. Modi, saepe consequuntur? Lorem
+            quidem ab natus placeat ratione, rem fugit. Est ullam modi odio omnis dolorem. Modi, saepe consequuntur?
+            Lorem
             ipsum dolor sit amet consectetur, adipisicing elit. Incidunt animi repudiandae quod nostrum. Modi
             necessitatibus quis quisquam, repellendus blanditiis quibusdam officia qui iste amet consequuntur impedit ab
             neque omnis fugit.</p>
@@ -90,17 +92,15 @@
       </article>
     </div>
   </section>
-  <video src="">
-    <source src=""/>
-  </video>
   <div class="container">
     <h2 class="event-list-title">Mas sobre mi Experiencia</h2>
-  </div> 
- <section id="Eventos" class="event-list">
+  </div>
+  <section id="Eventos" class="event-list">
     <div class="container">
       <article class="event">
         <figure class="envent-imageContainer">
-          <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" />
+          <video class="html-video" src="video/f8.mp4" width="1280" height="720" controls></video>
+          <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" /> -->
         </figure>
         <div class="event-detail">
           <h3 class="event-title">PlatziConf Mexico 2018</h3>
@@ -114,7 +114,11 @@
       </article>
       <article class="event">
         <figure class="envent-imageContainer">
-          <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" />
+          <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" /> -->
         </figure>
         <div class="event-detail">
           <h3 class="event-title">PlatziConf Mexico 2018</h3>
@@ -128,7 +132,11 @@
       </article>
       <article class="event">
         <figure class="envent-imageContainer">
-          <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" />
+          <div class="flexible-video">
+            <iframe class="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/LoKvxCSZw5w" frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+          <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" /> -->
         </figure>
         <div class="event-detail">
           <h3 class="event-title">PlatziConf Mexico 2018</h3>
@@ -142,7 +150,8 @@
       </article>
       <article class="event">
         <figure class="envent-imageContainer">
-          <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" />
+          <video class="html-video" src="video/f8.mp4" width="1280" height="720" controls></video>
+          <!-- <img class="event-image" src="images/platzi-conf.jpg" width="500" height="300" /> -->
         </figure>
         <div class="event-detail">
           <h3 class="event-title">PlatziConf Mexico 2018</h3>
@@ -170,7 +179,7 @@
         <a href="https://instagram.com/piero.montalv" class="social-link instagram"></a>
       </div>
     </div>
-  </section> 
+  </section>
   <footer class="footer">
     <div class="container">
       <div>
@@ -182,7 +191,7 @@
         </p>
       </div>
     </div>
-  </footer> 
+  </footer>
 </body>
 
 </html>
