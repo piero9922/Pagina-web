@@ -27,8 +27,8 @@
   
   .icon-menu:before {
     content: "\e900";
-  }
-  
+ }
+
 body{
     font-family: 'Source Sans Pro', sans-serif;
     margin: 0;
@@ -339,6 +339,20 @@ text-align: left;
     height: inherit;
     flex-wrap: inherit;
 }
+.burger-button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #696a5b;
+    display: none;
+    line-height: 40px;
+    text-align: center;
+    position: fixed;
+    z-index: 4;
+    left: 5px;
+    top: 5px;
+    color: black;
+}
 
 /*Desktop first que empieces desde el MQ mas grande */
 @media screen and (max-width:1024px){
@@ -389,6 +403,9 @@ text-align: left;
     position: relative;
 }
 @media screen and (max-width:767px){
+    .burger-button{
+        display: block;
+    }
     .header{
         display: block;
         height: auto;
@@ -402,9 +419,30 @@ text-align: left;
     }
     .header a{
         justify-content: center;
+        height: 40px;
+        font-size: 2em;
+        text-decoration: underline;
+        margin-bottom: .5em;
     }
     .header .logo{
         text-align: center;
+    }
+    .menu{
+        position: fixed;
+        background: rgba(5, 111, 255,.9);;
+        z-index: 3;
+        top: 0;
+        left: -100vw;
+        width: 100vw;
+        /* height: 100vh; */
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: .3s;
+    }
+    .menu.is-active{
+        left: 0;
     }
     .project{
         display: block;

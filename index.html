@@ -19,7 +19,7 @@
 </head>
 
 <body>
-  <i class="icon-menu"></i>
+  <i class="icon-menu burger-button" id="burger-menu"></i>
   </div>
   <header class="header">
     <div class="container">
@@ -177,6 +177,7 @@
         <a href="https://facebook.com/piero.montalvomendoza" class="social-link facebook"></a>
         <a href="https://github.com/pieromontalvo" class="social-link github"></a>
         <a href="https://instagram.com/piero.montalv" class="social-link instagram"></a>
+ 
       </div>
     </div>
   </section>
@@ -192,6 +193,38 @@
       </div>
     </div>
   </footer>
+  <script>
+    // console.log('Hola mundo! es mi primera linea JS');
+
+    console.log();
+    const ipad= window.matchMedia('screen and (max-width: 767px)');
+    const menu = document.querySelector('.menu');
+    // console.log(menu);
+    const burgerButton = document.querySelector('#burger-menu');
+    // console.log(burgerButton);
+
+
+    ipad.addListener(validation)
+
+    function validation (event) {
+      if(event.matches) {
+      burgerButton.addEventListener('click', hideShow)
+      }
+      else{
+      burgerButton.removeEventListener('click', hideShow)
+      }
+    }
+
+
+    function hideShow() {
+      if (menu.classList.contains('is-active')){
+        menu.classList.remove('is-active');
+      } 
+      else{
+        menu.classList.add('is-active');
+      }
+    }
+  </script>
 </body>
 
 </html>
